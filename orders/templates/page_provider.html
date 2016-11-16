@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.css">
+    </head>
+    <body>
+        <div class="table-scroll">
+        <table>
+            <thead>
+                <tr>
+                    <th width="200">Поставщик: {{ name }}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Регионы:</td>
+                    <td>
+                    {% for item in regions %}   
+                        {{ item.region_name }}
+                    {% endfor %}
+                    </td>
+            </tbody>
+        </table>
+        <a href="/search/" class="button radius">Назад</a>
+        </div>
+    </body>
+ </html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.4/foundation.js"></script>
