@@ -10,6 +10,10 @@
   Подробнее:
   http://proft.me/2010/04/3/python-i-okruzhenie-virtualenv/
   3. Активируйте окружение.
-  4. Запустите сервер. Подробнее:
+  4. Выполните python manage.py makemigrations чтобы создать миграцию для ваших изменений
+  5. Выполните python manage.py migrate чтобы применить изменения к базе данных.
+  6. Создайте суперпользователя: python manage.py createsuperuser
+  7. Запустите сервер. Подробнее:
   http://djbook.ru/rel1.9/intro/tutorial01.html#the-development-server
   
+ Вы можете добавить заказчиков, поставщиков и регионы, открыв “/admin/” локального домена в браузере – например, http://127.0.0.1:8000/admin/.
